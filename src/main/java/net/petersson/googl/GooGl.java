@@ -41,7 +41,7 @@ public class GooGl {
 	 * @throws IOException
 	 * @throws GooGlException
 	 */
-	protected URL shorten(URL longURL) throws IOException, GooGlException {
+	public URL shorten(URL longURL) throws IOException, GooGlException {
 
 		String postData = "{\"longUrl\": \"" + longURL.toExternalForm() + "\"}";
 		logger.finer("shorten() postData=" + postData);

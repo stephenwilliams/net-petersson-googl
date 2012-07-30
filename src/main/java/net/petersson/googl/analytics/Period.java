@@ -3,12 +3,11 @@ package net.petersson.googl.analytics;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-import org.apache.log4j.Logger;
+import java.util.logging.Logger;
 
 public class Period {
 
-	private static Logger logger = Logger.getLogger(Period.class);
+	private static Logger logger = Logger.getLogger(Period.class.getName());
 
 	private long shortUrlClicks;
 	private long longUrlClicks;
@@ -29,7 +28,7 @@ public class Period {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param arrayName
 	 * @param allTime
 	 * @return
@@ -43,7 +42,6 @@ public class Period {
 			idCountPairs.add(new IdCountPair(map));
 		}
 		return idCountPairs;
-
 	}
 
 	public long getShortUrlClicks() {
@@ -69,5 +67,4 @@ public class Period {
 	public List<IdCountPair> getPlatforms() {
 		return this.platforms;
 	}
-
 }

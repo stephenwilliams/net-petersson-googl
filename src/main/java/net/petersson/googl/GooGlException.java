@@ -11,5 +11,4 @@ public class GooGlException extends Exception {
 	public GooGlException(String response) {
 		super(response);
 	}
-
 }

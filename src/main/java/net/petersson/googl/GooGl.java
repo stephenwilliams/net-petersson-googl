@@ -1,5 +1,10 @@
 package net.petersson.googl;
 
+import com.google.gson.GsonBuilder;
+import net.petersson.googl.analytics.AnalyticsResponse;
+import net.petersson.googl.analytics.DateDeserializer;
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -8,25 +13,18 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Date;
-
-import net.petersson.googl.analytics.AnalyticsResponse;
-import net.petersson.googl.analytics.DateDeserializer;
-
-import org.apache.commons.lang.StringUtils;
-import org.apache.log4j.Logger;
-
-import com.google.gson.GsonBuilder;
+import java.util.logging.Logger;
 
 public class GooGl {
 
 	private static final String BASE_URL = "https://www.googleapis.com/urlshortener/v1/url";
 
-	private static Logger logger = Logger.getLogger(GooGl.class);
+	private static Logger logger = Logger.getLogger(GooGl.class.getName());
 
 	private String apiKey;
 
 	/**
-	 * 
+	 *
 	 * @param apiKey
 	 */
 	public GooGl(String apiKey) {
@@ -37,8 +35,8 @@ public class GooGl {
 	}
 
 	/**
-	 * 
-	 * @param strLongURL
+	 *
+	 * @param longURL
 	 * @return
 	 * @throws IOException
 	 * @throws GooGlException
@@ -46,12 +44,12 @@ public class GooGl {
 	protected URL shorten(URL longURL) throws IOException, GooGlException {
 
 		String postData = "{\"longUrl\": \"" + longURL.toExternalForm() + "\"}";
-		logger.debug("shorten() postData=" + postData);
+		logger.finer("shorten() postData=" + postData);
 
 		final String strGooGlUrl = BASE_URL + "?key=" + this.apiKey;
 
 		URL gooGlURL = new URL(strGooGlUrl);
-		logger.debug("shorten() gooGlURL=" + gooGlURL);
+		logger.finer("shorten() gooGlURL=" + gooGlURL);
 
 		HttpURLConnection httpURLConnection = (HttpURLConnection) gooGlURL.openConnection();
 		httpURLConnection.setRequestMethod("POST");
@@ -71,14 +69,14 @@ public class GooGl {
 		// Get response
 		GooGlResponse response = new GooGlResponse(getResponse(httpURLConnection));
 
-		logger.debug("shortUrl=" + response.getShortUrl());
+		logger.finer("shortUrl=" + response.getShortUrl());
 
 		return new URL(response.getShortUrl());
 	}
 
 	/**
 	 * throws IOException, GooGlException
-	 * 
+	 *
 	 * @param shortUrl
 	 * @return
 	 * @throws IOException
@@ -101,7 +99,7 @@ public class GooGl {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param shortUrl
 	 * @return
 	 * @throws IOException
@@ -124,11 +122,10 @@ public class GooGl {
 		gsonBuilder.registerTypeAdapter(Date.class, new DateDeserializer());
 
 		return (AnalyticsResponse) gsonBuilder.create().fromJson(json, AnalyticsResponse.class);
-
 	}
 
 	/**
-	 * 
+	 *
 	 * @param httpURLConnection
 	 * @return
 	 * @throws IOException
@@ -153,8 +150,8 @@ public class GooGl {
 		}
 		rd.close();
 
-		logger.debug("responseCode=" + httpURLConnection.getResponseCode());
-		logger.debug("response=" + response);
+		logger.finer("responseCode=" + httpURLConnection.getResponseCode());
+		logger.finer("response=" + response);
 		httpURLConnection.disconnect();
 
 		if (isGotErrorResponse) {
@@ -162,5 +159,4 @@ public class GooGl {
 		}
 		return response.toString();
 	}
-
 }

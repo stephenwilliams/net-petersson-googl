@@ -1,23 +1,22 @@
 package net.petersson.googl;
 
+import net.petersson.googl.analytics.AnalyticsResponse;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.Properties;
+import java.util.logging.Logger;
+
 import static net.petersson.googl.TestConstants.LONG_URL;
 import static net.petersson.googl.TestConstants.SHORT_URL;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import java.io.IOException;
-import java.net.URL;
-import java.util.Properties;
-
-import net.petersson.googl.analytics.AnalyticsResponse;
-
-import org.apache.log4j.Logger;
-import org.junit.Before;
-import org.junit.Test;
-
 public class GooGlTest {
 
-	private static Logger logger = Logger.getLogger(GooGlTest.class);
+	private static Logger logger = Logger.getLogger(GooGlTest.class.getName());
 
 	private String apiKey;
 
@@ -34,7 +33,6 @@ public class GooGlTest {
 
 		GooGl gooGl = new GooGl(this.apiKey);
 		assertEquals(new URL(SHORT_URL), gooGl.shorten(new URL(LONG_URL)));
-
 	}
 
 	@Test
@@ -42,7 +40,6 @@ public class GooGlTest {
 
 		GooGl gooGl = new GooGl(this.apiKey);
 		assertEquals(new URL(LONG_URL), gooGl.expand(new URL(SHORT_URL)));
-
 	}
 
 	@Test
@@ -55,7 +52,6 @@ public class GooGlTest {
 		} catch (GooGlException e) {
 
 		}
-
 	}
 
 	@Test

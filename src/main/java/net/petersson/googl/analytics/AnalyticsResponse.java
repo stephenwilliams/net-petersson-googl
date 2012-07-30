@@ -1,12 +1,11 @@
 package net.petersson.googl.analytics;
 
 import java.util.Map;
-
-import org.apache.log4j.Logger;
+import java.util.logging.Logger;
 
 public class AnalyticsResponse {
 
-	private transient static Logger logger = Logger.getLogger(AnalyticsResponse.class);
+	private transient static Logger logger = Logger.getLogger(AnalyticsResponse.class.getName());
 
 	private String kind;
 	private String id;
@@ -39,5 +38,4 @@ public class AnalyticsResponse {
 	public Analytics getAnalytics() {
 		return new Analytics(analytics);
 	}
-
 }

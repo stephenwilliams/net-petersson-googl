@@ -12,7 +12,6 @@ public class GooGlResponseTest extends TestCase {
 
 		assertEquals("http://goo.gl/fbsS", gooGlResponse.getShortUrl());
 		assertEquals("http://www.google.com/", gooGlResponse.getLongUrl());
-
 	}
 
 	public void test_GooGlResponse_corruptJson() {
@@ -25,7 +24,6 @@ public class GooGlResponseTest extends TestCase {
 		} catch (GooGlException e) {
 			//
 		}
-
 	}
 
 	public void test_GooGlResponse_corruptJson_getLongUrl() {
@@ -39,7 +37,6 @@ public class GooGlResponseTest extends TestCase {
 		} catch (GooGlException e) {
 			//
 		}
-
 	}
 
 	public void test_GooGlResponse_corruptJson_getShortUrl() {
@@ -53,7 +50,5 @@ public class GooGlResponseTest extends TestCase {
 		} catch (GooGlException e) {
 			//
 		}
-
 	}
-
 }

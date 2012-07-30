@@ -1,17 +1,19 @@
 package net.petersson.googl;
 
-import org.apache.log4j.Logger;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class GooGlResponse {
 
-	private static Logger logger = Logger.getLogger(GooGlResponse.class);
+	private static Logger logger = Logger.getLogger(GooGlResponse.class.getName());
 
 	private JSONObject jsonObject;
 
 	/**
-	 * 
+	 *
 	 * @param response
 	 * @throws GooGlException
 	 */
@@ -20,10 +22,9 @@ public class GooGlResponse {
 		try {
 			this.jsonObject = new JSONObject(response);
 		} catch (JSONException e) {
-			logger.error("GooGlResponse(String) JSONException", e);
+			logger.log(Level.SEVERE, "GooGlResponse(String) JSONException", e);
 			throw new GooGlException("failed to parse JSON response: " + response);
 		}
-
 	}
 
 	public String getLongUrl() throws GooGlException {
@@ -31,19 +32,17 @@ public class GooGlResponse {
 		try {
 			return this.jsonObject.getString("longUrl");
 		} catch (JSONException e) {
-			logger.error("GooGlResponse(String) JSONException", e);
+			logger.log(Level.SEVERE, "GooGlResponse(String) JSONException", e);
 			throw new GooGlException("failed to parse \"longUrl\" from JSON");
 		}
-
 	}
 
 	public String getShortUrl() throws GooGlException {
 		try {
 			return this.jsonObject.getString("id");
 		} catch (JSONException e) {
-			logger.error("GooGlResponse(String) JSONException", e);
+			logger.log(Level.SEVERE, "GooGlResponse(String) JSONException", e);
 			throw new GooGlException("failed to parse \"id\" (shortUrl) from JSON");
 		}
-
 	}
 }

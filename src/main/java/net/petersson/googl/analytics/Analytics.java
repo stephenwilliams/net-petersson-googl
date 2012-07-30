@@ -37,5 +37,4 @@ public class Analytics {
 	public Period getTwoHours() {
 		return this.twoHours;
 	}
-
 }

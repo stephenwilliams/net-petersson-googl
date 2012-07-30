@@ -1,25 +1,23 @@
 package net.petersson.googl.analytics;
 
+import com.google.gson.GsonBuilder;
+import net.petersson.googl.GooGlException;
+import net.petersson.googl.GooGlTest;
+import org.apache.commons.io.IOUtils;
+import org.junit.Test;
+
+import java.io.IOException;
+import java.util.Date;
+import java.util.logging.Logger;
+
 import static net.petersson.googl.TestConstants.LONG_URL;
 import static net.petersson.googl.TestConstants.SHORT_URL;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import java.io.IOException;
-import java.util.Date;
-
-import net.petersson.googl.GooGlException;
-import net.petersson.googl.GooGlTest;
-
-import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Logger;
-import org.junit.Test;
-
-import com.google.gson.GsonBuilder;
-
 public class AnalyticsResponseTest {
 
-	private static Logger logger = Logger.getLogger(GooGlTest.class);
+	private static Logger logger = Logger.getLogger(GooGlTest.class.getName());
 
 	@Test
 	public void test_analytics() throws IOException, GooGlException {
@@ -89,6 +87,5 @@ public class AnalyticsResponseTest {
 
 		assertEquals("Unknown/empty", response.getAnalytics().getTwoHours().getReferrers().get(0).getId());
 		assertEquals(2L, response.getAnalytics().getTwoHours().getReferrers().get(0).getCount());
-
 	}
 }

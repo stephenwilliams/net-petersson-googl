@@ -2,7 +2,16 @@ package net.petersson.googl;
 
 import junit.framework.TestCase;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class GooGlResponseTest extends TestCase {
+
+	@Override
+	protected void setUp() throws Exception {
+		super.setUp();
+		Logger.getLogger("").setLevel(Level.OFF);
+	}
 
 	public void test_GooGlResponse() throws GooGlException {
 
@@ -22,7 +31,7 @@ public class GooGlResponseTest extends TestCase {
 			new GooGlResponse(invalidJsonResponse);
 			fail("Expected GooGlException");
 		} catch (GooGlException e) {
-			//
+
 		}
 	}
 
@@ -48,7 +57,7 @@ public class GooGlResponseTest extends TestCase {
 			gooGlResponse.getShortUrl();
 			fail("Expected GooGlException on getLongUrl()");
 		} catch (GooGlException e) {
-			//
+
 		}
 	}
 }

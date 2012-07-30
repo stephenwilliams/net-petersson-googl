@@ -1,0 +1,67 @@
+<!-- NOTE!!!! Some dependencies that are not availible thru public repositories 
+	can be found in the folder "missing_jars" To be able to build you need to 
+	add these jars to your local repo using the "mvn install:install-file" command -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<prerequisites>
+		<maven>2.0.9</maven>
+	</prerequisites>
+
+	<groupId>net.petersson</groupId>
+	<artifactId>goo.gl</artifactId>
+	<version>1.0.</version>
+	<packaging>jar</packaging>
+	<name>${project.groupId}:${project.artifactId}</name>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.9</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20090211</version>
+		</dependency>
+
+		<!-- Gson: Java to Json conversion -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.0</version>
+		</dependency>
+
+		<!-- Commons Lang: StringUtils etc -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.3</version>
+		</dependency>
+
+		<!-- Commons IO: FileUtils etc -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.1</version>
+		</dependency>
+
+		<!-- Test dependencies -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+		</dependency>
+		<dependency>
+			<groupId>org.easymock</groupId>
+			<artifactId>easymock</artifactId>
+			<version>2.3</version>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+
+</project>

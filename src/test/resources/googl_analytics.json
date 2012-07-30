@@ -1,0 +1,661 @@
+{
+ "kind": "urlshortener#url",
+ "id": "http://goo.gl/fbsS",
+ "longUrl": "http://www.google.com/",
+ "status": "OK",
+ "created": "2009-12-13T07:22:55.000+00:00",
+ "analytics": {
+  "allTime": {
+   "shortUrlClicks": "17313",
+   "longUrlClicks": "374703",
+   "referrers": [
+    {
+     "count": "13419",
+     "id": "Unknown/empty"
+    },
+    {
+     "count": "839",
+     "id": "twitter.com"
+    },
+    {
+     "count": "385",
+     "id": "www.facebook.com"
+    },
+    {
+     "count": "191",
+     "id": "t.co"
+    },
+    {
+     "count": "176",
+     "id": "www.wmmail.ru"
+    },
+    {
+     "count": "155",
+     "id": "www.freestyledesigns.net"
+    },
+    {
+     "count": "149",
+     "id": "www.eksisozluk.com"
+    },
+    {
+     "count": "121",
+     "id": "goo.gl"
+    },
+    {
+     "count": "69",
+     "id": "wmmail.ru"
+    },
+    {
+     "count": "51",
+     "id": "code.google.com"
+    }
+   ],
+   "countries": [
+    {
+     "count": "4899",
+     "id": "US"
+    },
+    {
+     "count": "1200",
+     "id": "IN"
+    },
+    {
+     "count": "983",
+     "id": "CN"
+    },
+    {
+     "count": "746",
+     "id": "TR"
+    },
+    {
+     "count": "666",
+     "id": "MX"
+    },
+    {
+     "count": "541",
+     "id": "KR"
+    },
+    {
+     "count": "451",
+     "id": "GB"
+    },
+    {
+     "count": "317",
+     "id": "BR"
+    },
+    {
+     "count": "316",
+     "id": "JP"
+    },
+    {
+     "count": "307",
+     "id": "CO"
+    }
+   ],
+   "browsers": [
+    {
+     "count": "4823",
+     "id": "Chrome"
+    },
+    {
+     "count": "4665",
+     "id": "Firefox"
+    },
+    {
+     "count": "4166",
+     "id": "Internet Explorer"
+    },
+    {
+     "count": "1379",
+     "id": "Safari"
+    },
+    {
+     "count": "567",
+     "id": "Mobile"
+    },
+    {
+     "count": "514",
+     "id": "Opera"
+    },
+    {
+     "count": "350",
+     "id": "Mobile Safari"
+    },
+    {
+     "count": "82",
+     "id": "RockMelt"
+    },
+    {
+     "count": "47",
+     "id": "Maxthon"
+    },
+    {
+     "count": "47",
+     "id": "Ubuntu"
+    }
+   ],
+   "platforms": [
+    {
+     "count": "12329",
+     "id": "Windows"
+    },
+    {
+     "count": "1700",
+     "id": "Macintosh"
+    },
+    {
+     "count": "1095",
+     "id": "Other Unix"
+    },
+    {
+     "count": "592",
+     "id": "iPhone"
+    },
+    {
+     "count": "534",
+     "id": "Linux"
+    },
+    {
+     "count": "289",
+     "id": "BlackBerry"
+    },
+    {
+     "count": "208",
+     "id": "iPad"
+    },
+    {
+     "count": "88",
+     "id": "iPod"
+    },
+    {
+     "count": "70",
+     "id": "Nokia"
+    },
+    {
+     "count": "54",
+     "id": "Windows NT 6.1"
+    }
+   ]
+  },
+  "month": {
+   "shortUrlClicks": "1397",
+   "longUrlClicks": "2332",
+   "referrers": [
+    {
+     "count": "963",
+     "id": "Unknown/empty"
+    },
+    {
+     "count": "176",
+     "id": "www.wmmail.ru"
+    },
+    {
+     "count": "69",
+     "id": "wmmail.ru"
+    },
+    {
+     "count": "37",
+     "id": "t.co"
+    },
+    {
+     "count": "23",
+     "id": "unattended-news.net"
+    },
+    {
+     "count": "22",
+     "id": "www.facebook.com"
+    },
+    {
+     "count": "15",
+     "id": "goo.gl"
+    },
+    {
+     "count": "14",
+     "id": "twitter.com"
+    },
+    {
+     "count": "10",
+     "id": "leeiio.me"
+    },
+    {
+     "count": "9",
+     "id": "36ohk6dgmcd1n.yom.mail.yahoo.net"
+    }
+   ],
+   "countries": [
+    {
+     "count": "242",
+     "id": "US"
+    },
+    {
+     "count": "230",
+     "id": "TR"
+    },
+    {
+     "count": "129",
+     "id": "UA"
+    },
+    {
+     "count": "114",
+     "id": "MX"
+    },
+    {
+     "count": "90",
+     "id": "IN"
+    },
+    {
+     "count": "83",
+     "id": "BY"
+    },
+    {
+     "count": "62",
+     "id": "RU"
+    },
+    {
+     "count": "42",
+     "id": "FR"
+    },
+    {
+     "count": "35",
+     "id": "SA"
+    },
+    {
+     "count": "30",
+     "id": "CN"
+    }
+   ],
+   "browsers": [
+    {
+     "count": "388",
+     "id": "Internet Explorer"
+    },
+    {
+     "count": "344",
+     "id": "Chrome"
+    },
+    {
+     "count": "270",
+     "id": "Firefox"
+    },
+    {
+     "count": "145",
+     "id": "Safari"
+    },
+    {
+     "count": "129",
+     "id": "Opera"
+    },
+    {
+     "count": "84",
+     "id": "Mobile Safari"
+    },
+    {
+     "count": "21",
+     "id": "Mobile"
+    },
+    {
+     "count": "3",
+     "id": "Maxthon"
+    },
+    {
+     "count": "1",
+     "id": "Instapaper"
+    },
+    {
+     "count": "1",
+     "id": "Qt"
+    }
+   ],
+   "platforms": [
+    {
+     "count": "1054",
+     "id": "Windows"
+    },
+    {
+     "count": "168",
+     "id": "Macintosh"
+    },
+    {
+     "count": "63",
+     "id": "Linux"
+    },
+    {
+     "count": "38",
+     "id": "Other Unix"
+    },
+    {
+     "count": "32",
+     "id": "BlackBerry"
+    },
+    {
+     "count": "27",
+     "id": "iPhone"
+    },
+    {
+     "count": "11",
+     "id": "iPad"
+    },
+    {
+     "count": "2",
+     "id": "iPod"
+    },
+    {
+     "count": "1",
+     "id": "DoCoMo"
+    },
+    {
+     "count": "1",
+     "id": "Other Mobile"
+    }
+   ]
+  },
+  "week": {
+   "shortUrlClicks": "365",
+   "longUrlClicks": "663",
+   "referrers": [
+    {
+     "count": "216",
+     "id": "Unknown/empty"
+    },
+    {
+     "count": "68",
+     "id": "www.wmmail.ru"
+    },
+    {
+     "count": "21",
+     "id": "wmmail.ru"
+    },
+    {
+     "count": "5",
+     "id": "goo.gl"
+    },
+    {
+     "count": "4",
+     "id": "t.co"
+    },
+    {
+     "count": "4",
+     "id": "www.facebook.com"
+    },
+    {
+     "count": "2",
+     "id": "code.google.com"
+    },
+    {
+     "count": "2",
+     "id": "leeiio.me"
+    },
+    {
+     "count": "2",
+     "id": "raftwood.net"
+    },
+    {
+     "count": "2",
+     "id": "twitter.com"
+    }
+   ],
+   "countries": [
+    {
+     "count": "70",
+     "id": "TR"
+    },
+    {
+     "count": "55",
+     "id": "UA"
+    },
+    {
+     "count": "51",
+     "id": "US"
+    },
+    {
+     "count": "43",
+     "id": "IN"
+    },
+    {
+     "count": "18",
+     "id": "BY"
+    },
+    {
+     "count": "15",
+     "id": "MX"
+    },
+    {
+     "count": "9",
+     "id": "GB"
+    },
+    {
+     "count": "8",
+     "id": "SA"
+    },
+    {
+     "count": "5",
+     "id": "KR"
+    },
+    {
+     "count": "4",
+     "id": "AU"
+    }
+   ],
+   "browsers": [
+    {
+     "count": "101",
+     "id": "Internet Explorer"
+    },
+    {
+     "count": "88",
+     "id": "Chrome"
+    },
+    {
+     "count": "65",
+     "id": "Firefox"
+    },
+    {
+     "count": "44",
+     "id": "Opera"
+    },
+    {
+     "count": "23",
+     "id": "Safari"
+    },
+    {
+     "count": "10",
+     "id": "Mobile Safari"
+    },
+    {
+     "count": "2",
+     "id": "Mobile"
+    },
+    {
+     "count": "1",
+     "id": "Instapaper"
+    },
+    {
+     "count": "1",
+     "id": "Maxthon"
+    }
+   ],
+   "platforms": [
+    {
+     "count": "284",
+     "id": "Windows"
+    },
+    {
+     "count": "25",
+     "id": "Macintosh"
+    },
+    {
+     "count": "11",
+     "id": "Other Unix"
+    },
+    {
+     "count": "9",
+     "id": "BlackBerry"
+    },
+    {
+     "count": "6",
+     "id": "Linux"
+    },
+    {
+     "count": "4",
+     "id": "iPhone"
+    },
+    {
+     "count": "1",
+     "id": "iPad"
+    }
+   ]
+  },
+  "day": {
+   "shortUrlClicks": "34",
+   "longUrlClicks": "137",
+   "referrers": [
+    {
+     "count": "29",
+     "id": "Unknown/empty"
+    },
+    {
+     "count": "3",
+     "id": "www.facebook.com"
+    },
+    {
+     "count": "1",
+     "id": "36ohk6dgmcd1n.yom.mail.yahoo.net"
+    },
+    {
+     "count": "1",
+     "id": "us.mg201.mail.yahoo.com"
+    }
+   ],
+   "countries": [
+    {
+     "count": "9",
+     "id": "TR"
+    },
+    {
+     "count": "7",
+     "id": "MX"
+    },
+    {
+     "count": "5",
+     "id": "US"
+    },
+    {
+     "count": "3",
+     "id": "GB"
+    },
+    {
+     "count": "2",
+     "id": "CO"
+    },
+    {
+     "count": "2",
+     "id": "IN"
+    },
+    {
+     "count": "2",
+     "id": "TH"
+    },
+    {
+     "count": "1",
+     "id": "IL"
+    },
+    {
+     "count": "1",
+     "id": "IT"
+    },
+    {
+     "count": "1",
+     "id": "MY"
+    }
+   ],
+   "browsers": [
+    {
+     "count": "14",
+     "id": "Internet Explorer"
+    },
+    {
+     "count": "7",
+     "id": "Chrome"
+    },
+    {
+     "count": "7",
+     "id": "Safari"
+    },
+    {
+     "count": "3",
+     "id": "Firefox"
+    },
+    {
+     "count": "2",
+     "id": "Mobile Safari"
+    }
+   ],
+   "platforms": [
+    {
+     "count": "21",
+     "id": "Windows"
+    },
+    {
+     "count": "8",
+     "id": "Macintosh"
+    },
+    {
+     "count": "2",
+     "id": "Linux"
+    },
+    {
+     "count": "2",
+     "id": "Other Unix"
+    },
+    {
+     "count": "1",
+     "id": "BlackBerry"
+    }
+   ]
+  },
+  "twoHours": {
+   "shortUrlClicks": "5",
+   "longUrlClicks": "39",
+   "referrers": [
+    {
+     "count": "2",
+     "id": "Unknown/empty"
+    },
+    {
+     "count": "2",
+     "id": "www.facebook.com"
+    }
+   ],
+   "countries": [
+    {
+     "count": "2",
+     "id": "CO"
+    },
+    {
+     "count": "2",
+     "id": "TH"
+    }
+   ],
+   "browsers": [
+    {
+     "count": "2",
+     "id": "Chrome"
+    },
+    {
+     "count": "2",
+     "id": "Mobile Safari"
+    }
+   ],
+   "platforms": [
+    {
+     "count": "2",
+     "id": "Linux"
+    },
+    {
+     "count": "2",
+     "id": "Windows"
+    }
+   ]
+  }
+ }
+}

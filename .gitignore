@@ -63,3 +63,7 @@ build.xml
 # JRebel files #
 ################
 rebel.xml
+
+# Test Files #
+##############
+test.properties

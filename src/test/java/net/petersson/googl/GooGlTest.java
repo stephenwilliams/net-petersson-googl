@@ -24,7 +24,7 @@ public class GooGlTest {
 	public void setUp() throws IOException {
 
 		Properties properties = new Properties();
-		properties.load(this.getClass().getResourceAsStream("/test.properties"));
+		properties.load(this.getClass().getResourceAsStream("test.properties"));
 		this.apiKey = (String) properties.get("API_KEY");
 	}
 
